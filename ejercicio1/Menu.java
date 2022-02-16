@@ -37,11 +37,9 @@ public class Menu {
         int option = mainMenu();
         switch (option) {
             case 1:
-                planetSelection();
                 runMenu();
                 break;
             case 2:
-                displayPlanetsSelected();
                 runMenu();
                 break;
             default:
