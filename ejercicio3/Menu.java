@@ -67,29 +67,29 @@ public class Menu {
      * @param numbers Array that's going to be ordered.
      * @return Returns ordered Array.
      */
-    public static Double[] Burbuja(Double[] numbers) {
-        Double auxiliar;
-        Double[] arregloOrdenado;
+    public static Double[] Bubble(Double[] numbers) {
+        Double aux;
+        Double[] orderedArray;
         for(int i = 1; i < numbers.length; i++) {
             for(int j = 0;j < numbers.length-i;j++) {
                 if(numbers[j] > numbers[j+1]) {
-                    auxiliar = numbers[j];
+                    aux = numbers[j];
                     numbers[j] = numbers[j+1];
-                    numbers[j+1] = auxiliar;
+                    numbers[j+1] = aux;
                 }   
             }
         }
-        arregloOrdenado = numbers;
-        return arregloOrdenado;
+        orderedArray = numbers;
+        return orderedArray;
     }
     /**
      * Display ordered array using Bubble algoritm.
      */
     public void BubbleOrder(){
-        Double arregloOrdenado[] = Burbuja(getArray());
+        Double orderedArray[] = Bubble(getArray());
         System.out.println("\nArreglo ordenado con bubble sort\n");
-        for(int i = 0; i < arregloOrdenado.length;i++)
-            System.out.println(df.format(arregloOrdenado[i]));
+        for(int i = 0; i < orderedArray.length;i++)
+            System.out.println(df.format(orderedArray[i]));
     }
     
 }
