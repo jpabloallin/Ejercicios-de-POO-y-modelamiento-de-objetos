@@ -1,76 +1,21 @@
 package ejercicio1;
 
-public class Planet {
-    int id;
-    String name;
-    Double mass;
-    Double density;
-    Double diameter;
-    Double distanceFromSun;
-    
-    public Planet(int id, String name, Double mass, Double density, Double diameter, Double distanceFromSun) {
-        this.id = id;
-        this.name = name;
-        this.mass = mass;
-        this.density = density;
-        this.diameter = diameter;
-        this.distanceFromSun = distanceFromSun;
-    }
+/** 
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
+public class Planet extends SystemObject {
 
-    public int getId() {
-        return id;
+    /**
+     * Instancia del objeto planeta.
+     * @param name Nombre del planeta.
+     * @param mass Masa del planeta.
+     * @param middleDistance Distancia media del planeta al objeto de referencia.
+     * @param diameter Diámetro del planeta.
+     * @param referenceObject Objeto donde realiza la órbita.
+     */
+    public Planet(String name, double mass, double middleDistance, 
+            double diameter, SystemObject referenceObject) {
+        super(name, mass, middleDistance,diameter, referenceObject);
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Double getMass() {
-        return mass;
-    }
-
-    public void setMass(Double mass) {
-        this.mass = mass;
-    }
-
-    public Double getDensity() {
-        return density;
-    }
-
-    public void setDensity(Double density) {
-        this.density = density;
-    }
-
-    public Double getDiameter() {
-        return diameter;
-    }
-
-    public void setDiameter(Double diameter) {
-        this.diameter = diameter;
-    }
-
-    public Double getDistanceFromSun() {
-        return distanceFromSun;
-    }
-
-    public void setDistanceFromSun(Double distanceFromSun) {
-        this.distanceFromSun = distanceFromSun;
-    }
-
-    @Override
-    public String toString() {
-        return "id: " + id + " name: " + name + " mass: " + mass + " density: " + density + " diameter: " + diameter + " distanceFromSun: " + distanceFromSun;
-    }
-
-    
 }
-
-

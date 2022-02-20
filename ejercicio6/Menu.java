@@ -16,8 +16,9 @@ public class Menu {
                 System.out.println("\nIngresa un número: \n");
                 int number = entry.nextInt();
     
-                if (previous != null && previous == number)
+                if (previous != null && previous == number){
                     break;
+                }
     
                 vector.add(number);
                 previous = number;

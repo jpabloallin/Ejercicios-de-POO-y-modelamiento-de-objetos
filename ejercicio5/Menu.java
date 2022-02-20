@@ -103,7 +103,7 @@ public class Menu {
         Car car = new Car( brand,  model,  passengerNumber,  numbWheels,  color,  plateNumber, numDoors);
         
         /**
-         *Se guarda lel carro dentro de la lista de vehiculos.
+         *Se guarda el carro dentro de la lista de vehiculos.
          */
         vehicles.add(car);
     }
