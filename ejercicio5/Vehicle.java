@@ -1,5 +1,10 @@
 package ejercicio5;
 
+/** 
+ * Creación clase abstracta Vehiculo.
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public abstract class Vehicle implements IVehicle{
     
     String brand;
@@ -8,8 +13,6 @@ public abstract class Vehicle implements IVehicle{
     int numbWheels;
     String color;
     int plateNumber;
-
-    
 
     protected Vehicle(String brand, String model, int passengerNumber, int numbWheels, String color, int plateNumber) {
         this.brand = brand;

@@ -1,15 +1,16 @@
 package ejercicio4;
 
+/** 
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Vehicle {
-    
     String brand;
     String model;
     int passengerNumber;
     int numbWheels;
     String color;
     int plateNumber;
-
-    
 
     public Vehicle(String brand, String model, int passengerNumber, int numbWheels, String color, int plateNumber) {
         this.brand = brand;
@@ -73,6 +74,4 @@ public class Vehicle {
         return "Brand: " + brand + " Model: " + model + " Color: "+ color + " NumbWheels: " + numbWheels + " passengerNumber: "
                 + passengerNumber + " plateNumber: " + plateNumber;
     }
-
-    
 }

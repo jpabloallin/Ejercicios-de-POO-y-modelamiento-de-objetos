@@ -1,5 +1,10 @@
 package ejercicio5;
 
+/** 
+ * Creación clase Moto.
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Motorcycle extends Vehicle {
 
     int velocity;

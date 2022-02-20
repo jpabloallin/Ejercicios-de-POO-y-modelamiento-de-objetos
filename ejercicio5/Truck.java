@@ -1,5 +1,9 @@
 package ejercicio5;
-
+/** 
+ * Creación clase Camión.
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Truck extends Vehicle{
 
     int truckHeight;

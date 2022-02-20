@@ -1,5 +1,10 @@
 package ejercicio5;
 
+/** 
+ * Creación clase Barco.
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Boat extends Vehicle {
 
     int cargoCapacity;

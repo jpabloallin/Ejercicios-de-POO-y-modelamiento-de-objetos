@@ -4,13 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/** 
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Menu {
 
     Scanner entry = new Scanner(System.in);
     List<Vehicle> vehicles = new ArrayList<Vehicle>();
 
     public void addVehicle() {
-        // Read person information from the user
+        // Read vehicle information from the user
         for (int index = 1; index <= 10; index++) {
             
             System.out.print("\nEnter brand, empty will end: ");
@@ -38,12 +42,12 @@ public class Menu {
             System.out.print("\nEnter the plate number of the vehicle " + brand + ": ");
 
             int plateNumber = Integer.valueOf(entry.nextLine());
-            // We add a new person to the list.
-            // The person's name and age were decided by the user
+            // Add a new vehicle to the list.
+            // The vehicle's informaton was decided by the user
             vehicles.add(new Vehicle(brand, model, passengerNumber, numbWheels, color, plateNumber));
         }
 
-        // We'll print the number of the inputted persons, and the persons themselves
+        // Print the number of the inputted vehicles, and the vehicless themselves
         System.out.println();
         System.out.println("Total number of vehicles: " + vehicles.size());
         System.out.println("\nVehicles: \n");

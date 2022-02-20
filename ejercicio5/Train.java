@@ -1,5 +1,9 @@
 package ejercicio5;
-
+/** 
+ * Creación clase Tren.
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Train extends Vehicle {
 
     String powerSource;

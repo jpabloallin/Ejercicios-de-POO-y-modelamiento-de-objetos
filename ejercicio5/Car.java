@@ -1,5 +1,10 @@
 package ejercicio5;
 
+/** 
+ * Creación clase Carro.
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
 public class Car extends Vehicle {
 
     int numDoors;

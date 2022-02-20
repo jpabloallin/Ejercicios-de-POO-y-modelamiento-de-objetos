@@ -4,6 +4,11 @@ import java.text.DecimalFormat;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/** 
+ *  @author Juan Pablo Allin Cañas
+ *  @version 1.0 
+ */
+
 public class Menu {
 
     static Scanner entry = new Scanner(System.in);
