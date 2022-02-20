@@ -20,8 +20,7 @@ public class Menu {
         int option;
         System.out.print("\nCon cuál método quieres organizar la lista? \n" +
                 "1- Algoritmo de la burbuja \n" +
-                "2- Salir \n" +
-                "3- Salir" +
+                "2- Salir" +
                 "\n\nSeleccionar opción: ");
         option = entry.nextInt();
         System.out.print("\n");
