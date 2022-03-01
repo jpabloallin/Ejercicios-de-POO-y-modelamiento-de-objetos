@@ -28,7 +28,7 @@ public class Menu {
 
         try {
             int option;
-            for (int index = 1; index <= 5; index++) {
+            for (int index = 1; index <= 10; index++) {
 
                 do {
                     System.out.println("\nWhat type of vehicle do you want to create?");

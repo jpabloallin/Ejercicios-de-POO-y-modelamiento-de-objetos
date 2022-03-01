@@ -9,6 +9,9 @@ import java.util.Scanner;
  *  @version 1.0 
  */
 public class Menu {
+    int passengerNumber;
+    int numbWheels;
+    int plateNumber;
 
     Scanner entry = new Scanner(System.in);
     List<Vehicle> vehicles = new ArrayList<Vehicle>();
@@ -26,22 +29,33 @@ public class Menu {
             System.out.print("\nEnter the model of the vehicle " + brand + ": ");
 
             String model = entry.nextLine();
-
-            System.out.print("\nEnter the number of passengers in the vehicle " + brand + ": ");
-
-            int passengerNumber = Integer.valueOf(entry.nextLine());
             
-            System.out.print("\nEnter the number of wheels of the vehicle " + brand + ": ");
-
-            int numbWheels = Integer.valueOf(entry.nextLine());
-
+            try {
+                System.out.print("\nEnter the number of passengers in the vehicle " + brand + ": ");
+                passengerNumber = Integer.valueOf(entry.nextLine());
+            } catch (java.lang.NumberFormatException e) {
+                System.out.println("\nYou must input an integer number! Run the program again!\n");
+                break;
+            }
+            
+            try {
+                System.out.print("\nEnter the number of wheels of the vehicle " + brand + ": ");
+                numbWheels = Integer.valueOf(entry.nextLine());
+            } catch (java.lang.NumberFormatException e) {
+                System.out.println("\nYou must input an integer number! Run the program again!\n");
+                break;
+            }
+            
             System.out.print("\nEnter the color of the vehicle " + brand + ": ");
-
             String color = entry.nextLine();
-
-            System.out.print("\nEnter the plate number of the vehicle " + brand + ": ");
-
-            int plateNumber = Integer.valueOf(entry.nextLine());
+            try {
+                System.out.print("\nEnter the plate number of the vehicle " + brand + ": ");
+                plateNumber = Integer.valueOf(entry.nextLine());
+            } catch (java.lang.NumberFormatException e) {
+                System.out.println("\nYou must input an integer number! Run the program again!\n");
+                break;
+            }
+            
             // Add a new vehicle to the list.
             // The vehicle's informaton was decided by the user
             vehicles.add(new Vehicle(brand, model, passengerNumber, numbWheels, color, plateNumber));
